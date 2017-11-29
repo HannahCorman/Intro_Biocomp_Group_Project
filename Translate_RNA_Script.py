@@ -7,8 +7,8 @@ import csv
 d = {}
 with open('codonmap.txt', 'rb') as csv_file:
     for line in csv_file:
-        (key, val) = line.split()
-        d[val] = key
+        (aminoacid, codon) = line.split()
+        d[codon] = aminoacid
 
 print(d)
 #read transcript fasta files
