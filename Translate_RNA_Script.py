@@ -34,7 +34,7 @@ def translate(codex, fasta):
                 else:
                     protein += res
             sequences.append(protein)
-    return ['{0}\t{1}'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))]
+    return ['{0}\n{1}'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))]
 
 if __name__ == '__main__':
     #read transcript fasta files
@@ -44,3 +44,4 @@ if __name__ == '__main__':
     obese2 = open('obese2.fasta', 'r')
 
     print('\n'.join(translate(d, control1.read().split())))
+    
