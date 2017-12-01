@@ -42,6 +42,24 @@ if __name__ == '__main__':
     control2 = open('control2.fasta', 'r')
     obese1 = open('obese1.fasta', 'r')
     obese2 = open('obese2.fasta', 'r')
-
-    print('\n'.join(translate(d, control1.read().split())))
+    #creates and opens files to write
+    control1protein = open('control1protein.fasta', 'w')
+    control2protein = open('control2protein.fasta', 'w')
+    obese1protein = open('obese1protein.fasta', 'w')
+    obese2protein = open('obese2protein.fasta', 'w')
+    #writes the translated nucleotides to the outfiles
+    control1protein.write('\n'.join(translate(d, control1.read().split())))
+    control2protein.write('\n'.join(translate(d, control2.read().split())))
+    obese1protein.write('\n'.join(translate(d, obese1.read().split())))
+    obese2protein.write('\n'.join(translate(d, obese2.read().split())))
+    #closes files
+    control1.close
+    control2.close
+    obese1.close
+    obese2.close
+    control1protein.close
+    control2protein.close
+    obese1protein.close
+    obese2protein.close
+    
     
