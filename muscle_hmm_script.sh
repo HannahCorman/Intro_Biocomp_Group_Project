@@ -19,5 +19,5 @@ for build in $(ls | egrep 'protein.fasta$') #grep only protein.fasta files
 	./hmmsearch --tblout $build.Lhx2_9.out Lhx2_9.fasta.align.hmm $build
 	./hmmsearch --tblout $build.Ptpn5_6.out Ptpn5_6.fasta.align.hmm $build
 	./hmmsearch --tblout $build.Slc7a12_2.out Slc7a12_2.fasta.align.hmm $build
-	./hmmsearch --tblout $build.Synpr_10.out Synpr.fasta.align.hmm $build
+	./hmmsearch --tblout $build.Synpr_10.out Synpr_10.fasta.align.hmm $build
 	done
