@@ -18,7 +18,7 @@ def translate(codex, fasta):
     """
     sequences = [] # sequential list of protein sequences
     sequence_names = []
-    for i, item in enumerate(fasta.read().split()): # loops over list, list items
+    for i, item in enumerate(fasta.read().split()):
         protein = '' # translated protein sequence
         if i%2 == 0: # if index is even
             sequence_names.append(item)
@@ -39,8 +39,9 @@ def translate(codex, fasta):
 
 if __name__ == '__main__':
     #read transcript fasta files
-    condition_list = sys.argv[1:]
-    if not condition_list:
+    try:
+        condition_list = sys.argv[1:]
+    except IOError or not condition_list:
         print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
         sys.exit()
     for condition in condition_list:
