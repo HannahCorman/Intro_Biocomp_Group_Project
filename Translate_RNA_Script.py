@@ -1,5 +1,6 @@
 #import packages
 from __future__ import print_function
+import sys
 
 #open file codonmap and store it as a dictionary under the variable name "d"
 d = {}
@@ -33,7 +34,10 @@ def translate(codex, fasta):
 
 if __name__ == '__main__':
     #read transcript fasta files
-    condition_list = ['control1', 'control2', 'obese1', 'obese2']
+    condition_list = sys.argv[1:]
+    if not condition_list:
+        print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
+        sys.exit()
     for condition in condition_list:
         with open('%s.fasta'%condition, 'r') as inFile, \
         open('%sprotein.fasta'%condition, 'w') as outFile:
