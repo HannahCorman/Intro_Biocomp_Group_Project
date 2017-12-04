@@ -1,10 +1,5 @@
 #import packages
 from __future__ import print_function
-import csv
-import os
-import pandas
-import numpy
-
 
 #open file codonmap and store it as a dictionary under the variable name "d"
 d = {}
@@ -34,7 +29,7 @@ def translate(codex, fasta):
                 else:
                     protein += res
             sequences.append(protein)
-    return '\n'.join(['{0}\n{1}'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))])
+    return '\n'.join(['{0}\n{1}\n'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))])
 
 if __name__ == '__main__':
     #read transcript fasta files
