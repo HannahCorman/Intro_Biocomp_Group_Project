@@ -11,3 +11,13 @@ for alignment in $(ls | egrep '_[0-9]{1,2}\.fasta.align$') #grep only alignment 
 	do
 	./hmmbuild $alignment.hmm $alignment
 	done
+
+for build in $(ls | egrep 'protein.fasta$') #grep only protein.fasta files
+	do
+	./hmmsearch --tblout $build.Atp12a_8.out Atp12a_8.fasta.align.hmm $build  
+	./hmmsearch --tblout $build.Gsta2_1.out Gsta2_1.fasta.align.hmm $build
+	./hmmsearch --tblout $build.Lhx2_9.out Lhx2_9.fasta.align.hmm $build
+	./hmmsearch --tblout $build.Ptpn5_6.out Ptpn5_6.fasta.align.hmm $build
+	./hmmsearch --tblout $build.Slc7a12_2.out Slc7a12_2.fasta.align.hmm $build
+	./hmmsearch --tblout $build.Synpr_10.out Synpr.fasta.align.hmm $build
+	done
