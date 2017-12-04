@@ -23,12 +23,17 @@ def translate(codex, fasta):
         if i%2 == 0: # if index is even
             sequence_names.append(item)
         else:
+            started = False
             for j in range(0, len(item), 3):
                 res = codex[item[j:j+3]]
-                if res == 'Stop':
-                    break
-                else:
-                    protein += res
+                if res == 'M' and not started:
+                    started = True
+                    continue
+                if started:
+                    if res == 'Stop':
+                        break
+                    else:
+                        protein += res
             sequences.append(protein)
     return '\n'.join(['{0}\n{1}\n'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))])
 
