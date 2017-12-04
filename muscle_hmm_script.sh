@@ -1,3 +1,4 @@
+#!/bin/bash
 #Muscle alignment for protein files from BLAST
 #Build hmm for alignments
 #Path for muscle/hmmbuild may be different depending on where binaries are
