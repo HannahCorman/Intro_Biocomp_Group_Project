@@ -1,0 +1,71 @@
+#                                                                --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name            accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ----------  -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+Obese2               -          Lhx2_9-primates.fasta -           2.4e-222  732.6   5.1  2.7e-222  732.5   5.1   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      Lhx2_9-primates.fasta.msa.hmm
+# Target file:     ../obese2protein.fasta
+# Option settings: ../hmmsearch --tblout ../obese2protein.fasta.Lhx2_9-primates.out Lhx2_9-primates.fasta.msa.hmm ../obese2protein.fasta 
+# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project/Further_Exploration
+# Date:            Mon Dec  4 19:35:46 2017
+# [ok]
