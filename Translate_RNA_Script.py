@@ -1,13 +1,22 @@
-#import packages
+"""
+Translates all DNA sequences in an arbitrary number of fasta files
+into amino acids. Takes fasta file names as command line arguments,
+WITHOUT any extension:
+
+USAGE: python Translate_RNA_Script.py fasta1 fasta2 ... fastan
+
+Cannot be run using the run script button in Rodeo or Spyder.
+Try running in a terminal.
+"""
 from __future__ import print_function
 import sys
 
-#open file codonmap and store it as a dictionary under the variable name "d"
-d = {}
-with open('codonmap.txt', 'r') as csv_file: # Soudn't open as binary, ASCII is fine.
+# creates dictionary which contains DNA codon-to-amino acid translations
+D = {}
+with open('codonmap.txt', 'r') as csv_file:
     for line in csv_file:
-        aa, codon = line.split() # Don't need parentheses for simultaneous assignment
-        d[codon] = aa
+        aa, codon = line.split()
+        D[codon] = aa
 
 def translate(codex, fasta):
     """
@@ -20,35 +29,37 @@ def translate(codex, fasta):
     sequence_names = []
     for i, item in enumerate(fasta.read().split()):
         protein = '' # translated protein sequence
-        if i%2 == 0: # if index is even
+        if i%2 == 0: # if index is even, line is seq name
             sequence_names.append(item)
-        else:
-            started = False
-            for j in range(0, len(item), 3):
+        else: # otherwise, fasta is DNA sequence
+            started = False # Initiating met. hasn't been found.
+            for j in range(0, len(item), 3): # read by 3s
                 res = codex[item[j:j+3]]
                 if res == 'M' and not started:
-                    started = True
+                    started = True # start translating if we find a met.
                     continue
                 if started:
-                    if res == 'Stop':
+                    if res == 'Stop': # stop codon, end translation
                         break
                     else:
-                        protein += res
+                        protein += res # extend translated protein seq.
             sequences.append(protein)
-    return '\n'.join(['{0}\n{1}\n'.format(sequence_names[p], sequences[p]) for p in range(len(sequences))])
+    # return names followed by sequences line-by-line
+    return '\n'.join(['{0}\n{1}\n'.format(sequence_names[p],
+                                          sequences[p]) for p in range(len(sequences))])
 
 if __name__ == '__main__':
-    #read transcript fasta files
+    #read transcript fasta files from system arguments
     try:
-        condition_list = sys.argv[1:]
-    	if not condition_list:
-        	print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
-        	sys.exit()
-        for condition in condition_list:
-        	with open('%s.fasta'%condition, 'r') as inFile, \
-	        open('%sprotein.fasta'%condition, 'w') as outFile:
-        	    outFile.write(translate(d, inFile))
-    except IOError:
-       	print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
-       	sys.exit()
-	
+        CONDITION_LIST = sys.argv[1:]
+        if not CONDITION_LIST:
+            print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
+            sys.exit()
+        for condition in CONDITION_LIST:
+            with open('%s.fasta'%condition, 'r') as inFile, \
+                open('%sprotein.fasta'%condition, 'w') as outFile:
+                # translates and auto-closes both input and output file
+                outFile.write(translate(D, inFile))
+    except IOError: # If no arguments passed, exit and print error.
+        print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
+        sys.exit()
