@@ -11,13 +11,47 @@ from scipy.stats import chi2
 from plotnine import *
 
 #create single file with all output information
+#Control 1 files condensed to 1 file
 Control1filenames = ['control1protein.fasta.Atp12a_8.out','control1protein.fasta.Gsta2_1.out','control1protein.fasta.Lhx2_9.out','control1protein.fasta.Ptpn5_6.out','control1protein.fasta.Slc7a12_2.out','control1protein.fasta.Slc7a12_2.out']
 with open('Control1hmmoutput', 'w') as outfile:
     for fname in Control1filenames:
         with open(fname) as infile:
             for line in infile:
                 outfile.write(line)
+
+#Control 2 files condensed to 1 file  
+Control2filenames = ['control2protein.fasta.Atp12a_8.out','control2protein.fasta.Synpr_10.out','control2protein.fasta.Slc7a12_2.out','control2protein.fasta.Ptpn5_6.out','control2protein.fasta.Lhx2_9.out','control2protein.fasta.Gsta2_1.out']
+with open('Control2hmmoutput', 'w') as outfile:
+    for fname in Control2filenames:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)
                 
+#Obese 1 files condensed to 1 file 
+Obese1filenames = ['obese1protein.fasta.Slc7a12_2.out','obese1protein.fasta.Atp12a_8.out','obese1protein.fasta.Ptpn5_6.out','obese1protein.fasta.Gsta2_1.out','obese1protein.fasta.Lhx2_9.out','obese1protein.fasta.Synpr_10.out']
+with open('Obese1hmmoutput', 'w') as outfile:
+    for fname in Obese1filenames:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)
+                
+#Obese 2 files condensed to 1 file
+Obese2filenames = ['obese2protein.fasta.Atp12a_8.out','obese2protein.fasta.Synpr_10.out','obese2protein.fasta.Slc7a12_2.out','obese2protein.fasta.Ptpn5_6.out','obese2protein.fasta.Lhx2_9.out','obese2protein.fasta.Gsta2_1.out']
+with open('Obese2hmmoutput', 'w') as outfile:
+    for fname in Obese2filenames:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)
+#Single file to use for graphing
+ExpressionFiles = ['Control1hmmoutput','Control2hmmoutput','Obese1hmmoutput','Obese2hmmoutput']
+with open('FinalHmmOutput', 'w') as outfile:
+    for fname in ExpressionFiles:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)
+                
+#For graphing, our data is in FinalHmmOutput
+
 #generate a summary plot
 ggplot(expression,aes(x='',y=''))+geom_bar(stat="summary",fun_y=numpy.mean)+theme_classic()
 
