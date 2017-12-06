@@ -44,7 +44,7 @@ if __name__ == '__main__':
     	if not condition_list:
         	print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
         	sys.exit()
-	    for condition in condition_list:
+        for condition in condition_list:
         	with open('%s.fasta'%condition, 'r') as inFile, \
 	        open('%sprotein.fasta'%condition, 'w') as outFile:
         	    outFile.write(translate(d, inFile))
