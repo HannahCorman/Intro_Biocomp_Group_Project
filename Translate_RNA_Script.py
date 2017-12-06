@@ -41,10 +41,14 @@ if __name__ == '__main__':
     #read transcript fasta files
     try:
         condition_list = sys.argv[1:]
-    except IOError or not condition_list:
-        print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
-        sys.exit()
-    for condition in condition_list:
-        with open('%s.fasta'%condition, 'r') as inFile, \
-        open('%sprotein.fasta'%condition, 'w') as outFile:
-            outFile.write(translate(d, inFile))
+    	if not condition_list:
+        	print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
+        	sys.exit()
+	    for condition in condition_list:
+        	with open('%s.fasta'%condition, 'r') as inFile, \
+	        open('%sprotein.fasta'%condition, 'w') as outFile:
+        	    outFile.write(translate(d, inFile))
+    except IOError:
+       	print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
+       	sys.exit()
+	
