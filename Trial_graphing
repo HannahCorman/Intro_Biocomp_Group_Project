@@ -10,9 +10,20 @@ from scipy.optimize import minimize
 from scipy.stats import chi2
 from plotnine import *
 
-#load data
-expression = 
-
+#create single file with all output information
+Control1filenames = ['control1protein.fasta.Atp12a_8.out','control1protein.fasta.Gsta2_1.out','control1protein.fasta.Lhx2_9.out','control1protein.fasta.Ptpn5_6.out','control1protein.fasta.Slc7a12_2.out','control1protein.fasta.Slc7a12_2.out']
+with open('Control1hmmoutput', 'w') as outfile:
+    for fname in Control1filenames:
+        with open(fname) as infile:
+            for line in infile:
+                outfile.write(line)
+                
 #generate a summary plot
 ggplot(expression,aes(x='',y=''))+geom_bar(stat="summary",fun_y=numpy.mean)+theme_classic()
 
+#want to have 4 bars for each transcript (control1, control2, obese1, obese2)
+#Atp12a_8
+#Control 1
+#Control 2
+#Obese 1
+#Obese 2
