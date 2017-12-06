@@ -1,0 +1,24 @@
+﻿File: LV_conceptualmodel.png
+1. All letters and symbols with no figure legend. What does any of this mean? This is discussed in the Project summary, but conceptual models should be standalone figures.
+
+
+File: RM_conceptualmodel.png
+1. See comment #1 on LV_conceptualmodel.png - no idea what any of this means, or how the two models differ.
+
+
+File: ProjectSummary2
+1. Is there a more efficient way to graph the results without a big block of code?
+2. Group gives a great explanation at beginning of file on the goals of the project and the summary at the end is well written
+3. Why are there two project summaries? These could be consolidated into a single file. 
+4. Have “unknown character” appear in code for Rosenzwieg-MacArthur Model 
+
+
+File: LV_RM_FinalCode.py
+1. Why did you import os if you don’t use it?
+2. Why did you import scipy and scipy.integrate if you only use the latter?
+3. Comments are vague - things are referred to as “state variables” or “parameters” but what do these represent? What are you actually modeling?? This should be included in script comments and not only in the project summary.
+4. Line 39 - why reassign value to modelSim? Just call pd.DataFrame() on your original modelSim in line 37 (i.e. modelSim = pd.DataFrame(spint.odeint(func=LVSim, y0=N0, t=times, args=params)) )
+5. The param lists on lines 51-54 are un-Pythonic. Try list comprehension to make a list of repeating values ( i.e. [b for b in range(5)] will give you [b, b, b, b, b] ).
+6. Range call on line 67 has an explicit 0 as the lower range - this is redundant, as 0 is the default lower range. range(10) == range(0, 10).
+7. Code on lines 210-215 is a repeat - why did you do this twice if you already have parameters?
+If you have spyder (not sure if rodeo has this) try running a source code evaluation (F8 in spyder) to give recommendations on how to improve readability, naming schemes, flow and general Python-ness of your script.
