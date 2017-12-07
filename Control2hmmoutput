@@ -25,11 +25,11 @@ Control2             -          Atp12a_8.fasta       -                  0 2451.7
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Atp12a_8.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Atp12a_8.out Atp12a_8.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Atp12a_8.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Atp12a_8.out ./hmm/Atp12a_8.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:06 2017
+# Date:            Thu Dec  7 12:58:48 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -58,11 +58,11 @@ Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Gsta2_1.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Gsta2_1.out Gsta2_1.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Gsta2_1.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Gsta2_1.out ./hmm/Gsta2_1.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:07 2017
+# Date:            Thu Dec  7 12:58:48 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -91,11 +91,11 @@ Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Lhx2_9.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Lhx2_9.out Lhx2_9.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Lhx2_9.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:07 2017
+# Date:            Thu Dec  7 12:58:48 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -124,11 +124,11 @@ Control2             -          Ptpn5_6.fasta        -                  0 1318.0
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Ptpn5_6.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Ptpn5_6.out Ptpn5_6.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Ptpn5_6.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Ptpn5_6.out ./hmm/Ptpn5_6.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:07 2017
+# Date:            Thu Dec  7 12:58:49 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -157,11 +157,11 @@ Control2             -          Slc7a12_2.fasta      -           8.7e-102  335.1
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Slc7a12_2.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Slc7a12_2.out Slc7a12_2.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Slc7a12_2.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Slc7a12_2.out ./hmm/Slc7a12_2.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:09 2017
+# Date:            Thu Dec  7 12:58:50 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -190,9 +190,9 @@ Control2             -          Synpr_10.fasta       -           8.7e-204  668.5
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Synpr_10.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Synpr_10.out Synpr_10.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Synpr_10.fasta.align.hmm
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Synpr_10.out ./hmm/Synpr_10.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:09 2017
+# Date:            Thu Dec  7 12:58:50 2017
 # [ok]

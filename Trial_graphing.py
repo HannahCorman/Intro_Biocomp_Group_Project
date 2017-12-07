@@ -1,6 +1,7 @@
 #Group project graphing trial
 
 #import packages
+import os
 import numpy
 import pandas
 import scipy
@@ -10,7 +11,7 @@ from scipy.optimize import minimize
 from scipy.stats import chi2
 from plotnine import *
 
-CONDITIONS = ['control1', 'control2', 'obese1', 'obese2']
+CONDITIONS = ['Control1', 'Control2', 'Obese1', 'Obese2']
 SEQ_NAMES = ['Atp12a_8','Gsta2_1','Lhx2_9','Ptpn5_6','Slc7a12_2','Synpr_10']
 
 def condense_output(cond):
@@ -19,13 +20,12 @@ def condense_output(cond):
     filenames = ['{0}protein.fasta.{1}.out'.format(cond, seq) for seq in SEQ_NAMES]
     with open('%shmmoutput'%cond, 'w') as outFile:
         for f in filenames:
-                with open(f, 'r') as inFile:
-                    outFile.write(inFile.read())
+            with open('./hmmoutput/%s'%f, 'r') as inFile:
+                outFile.write(inFile.read())
 
 #create single file with all output information
 #Control 1 files condensed to 1 file
 [condense_output(cond) for cond in CONDITIONS]
-
                 
 #Single file to use for graphing
 

@@ -57,8 +57,8 @@ Obese1               -          Lhx2_9.fasta         -           8.9e-298  980.9
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
 # Query file:      ./hmm/Lhx2_9.fasta.align.hmm
-# Target file:     ./obese1protein.fasta
-# Option settings: ./hmm/hmmsearch --tblout ./output/obese1protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./obese1protein.fasta 
+# Target file:     ./Obese1protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese1protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./Obese1protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:31:13 2017
+# Date:            Thu Dec  7 12:58:52 2017
 # [ok]

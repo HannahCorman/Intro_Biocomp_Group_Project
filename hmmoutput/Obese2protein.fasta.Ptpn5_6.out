@@ -24,8 +24,8 @@ Obese2               -          Ptpn5_6.fasta        -                  0 1318.0
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
 # Query file:      ./hmm/Ptpn5_6.fasta.align.hmm
-# Target file:     ./obese2protein.fasta
-# Option settings: ./hmm/hmmsearch --tblout ./output/obese2protein.fasta.Ptpn5_6.out ./hmm/Ptpn5_6.fasta.align.hmm ./obese2protein.fasta 
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Ptpn5_6.out ./hmm/Ptpn5_6.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:31:17 2017
+# Date:            Thu Dec  7 12:58:57 2017
 # [ok]

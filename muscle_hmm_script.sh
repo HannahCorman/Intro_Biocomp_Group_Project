@@ -7,12 +7,12 @@ for sequence in $(ls | egrep '_[0-9]{1,2}\.fasta$'); do
 	./align/muscle.exe -in $sequence -out ./align/$sequence.align
 done
 
-for alignment in $(ls | egrep '_[0-9]{1,2}\.fasta.align$'); do
+for alignment in $(ls ./align/ | egrep '_[0-9]{1,2}\.fasta.align$'); do
 	./hmm/hmmbuild ./hmm/$alignment.hmm ./align/$alignment
 done
 
 for build in $(ls | egrep 'protein.fasta$'); do
-	for seq in "Atp12a_8" "Gsta2_1" "Lhx2_9" "Ptpn5_6" "S1c7a12_2" "Synpr_10"; do
+	for seq in "Atp12a_8" "Gsta2_1" "Lhx2_9" "Ptpn5_6" "Slc7a12_2" "Synpr_10"; do
 		./hmm/hmmsearch --tblout ./hmmoutput/$build.$seq.out ./hmm/$seq.fasta.align.hmm ./$build
 	done
 done

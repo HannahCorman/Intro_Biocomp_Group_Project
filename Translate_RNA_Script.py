@@ -54,7 +54,7 @@ if __name__ == '__main__':
         CONDITION_LIST = ['control1', 'control2', 'obese1', 'obese2']
         for condition in CONDITION_LIST:
             with open('fasta/%s.fasta'%condition, 'r') as inFile, \
-                open('%sprotein.fasta'%condition, 'w') as outFile:
+                open('%sprotein.fasta'%condition.title(), 'w') as outFile:
                 # translates and auto-closes both input and output file
                 outFile.write(translate(D, inFile))
     except IOError: # If no arguments passed, exit and print error.

@@ -43,11 +43,11 @@ Obese2               -          Atp12a_8.fasta       -                  0 2451.7
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Atp12a_8.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Atp12a_8.out Atp12a_8.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Atp12a_8.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Atp12a_8.out ./hmm/Atp12a_8.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:18 2017
+# Date:            Thu Dec  7 12:58:56 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -57,11 +57,11 @@ Obese2               -          Gsta2_1.fasta        -           3.8e-155  508.9
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Gsta2_1.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Gsta2_1.out Gsta2_1.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Gsta2_1.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Gsta2_1.out ./hmm/Gsta2_1.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:18 2017
+# Date:            Thu Dec  7 12:58:56 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -128,11 +128,11 @@ Obese2               -          Lhx2_9.fasta         -           8.6e-298  980.9
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Lhx2_9.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Lhx2_9.out Lhx2_9.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Lhx2_9.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:19 2017
+# Date:            Thu Dec  7 12:58:57 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -159,11 +159,11 @@ Obese2               -          Ptpn5_6.fasta        -                  0 1318.0
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Ptpn5_6.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Ptpn5_6.out Ptpn5_6.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Ptpn5_6.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Ptpn5_6.out ./hmm/Ptpn5_6.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:19 2017
+# Date:            Thu Dec  7 12:58:57 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -187,11 +187,11 @@ Obese2               -          Slc7a12_2.fasta      -           1.9e-101  335.1
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Slc7a12_2.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Slc7a12_2.out Slc7a12_2.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Slc7a12_2.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Slc7a12_2.out ./hmm/Slc7a12_2.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:20 2017
+# Date:            Thu Dec  7 12:58:58 2017
 # [ok]
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
@@ -293,9 +293,9 @@ Obese2               -          Synpr_10.fasta       -           1.9e-203  668.5
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Synpr_10.fasta.align.hmm
-# Target file:     obese2protein.fasta
-# Option settings: ./hmmsearch --tblout obese2protein.fasta.Synpr_10.out Synpr_10.fasta.align.hmm obese2protein.fasta 
+# Query file:      ./hmm/Synpr_10.fasta.align.hmm
+# Target file:     ./Obese2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese2protein.fasta.Synpr_10.out ./hmm/Synpr_10.fasta.align.hmm ./Obese2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:21 2017
+# Date:            Thu Dec  7 12:58:58 2017
 # [ok]

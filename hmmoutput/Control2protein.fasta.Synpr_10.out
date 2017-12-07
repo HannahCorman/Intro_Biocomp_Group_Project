@@ -26,8 +26,8 @@ Control2             -          Synpr_10.fasta       -           8.7e-204  668.5
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
 # Query file:      ./hmm/Synpr_10.fasta.align.hmm
-# Target file:     ./control2protein.fasta
-# Option settings: ./hmm/hmmsearch --tblout ./output/control2protein.fasta.Synpr_10.out ./hmm/Synpr_10.fasta.align.hmm ./control2protein.fasta 
+# Target file:     ./Control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Synpr_10.out ./hmm/Synpr_10.fasta.align.hmm ./Control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:31:11 2017
+# Date:            Thu Dec  7 12:58:50 2017
 # [ok]
