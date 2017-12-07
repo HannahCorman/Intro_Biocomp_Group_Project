@@ -1,0 +1,33 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Gsta2_1.fasta        -           1.7e-155  508.9   0.3  1.9e-155  508.8   0.3   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmm/Gsta2_1.fasta.align.hmm
+# Target file:     ./control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./output/control2protein.fasta.Gsta2_1.out ./hmm/Gsta2_1.fasta.align.hmm ./control2protein.fasta 
+# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 12:31:10 2017
+# [ok]

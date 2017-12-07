@@ -51,12 +51,9 @@ def translate(codex, fasta):
 if __name__ == '__main__':
     #read transcript fasta files from system arguments
     try:
-        CONDITION_LIST = sys.argv[1:]
-        if not CONDITION_LIST:
-            print('Usage: python Translate_RNA_SCript.py fasta1 fasta2... fastan')
-            sys.exit()
+        CONDITION_LIST = ['control1', 'control2', 'obese1', 'obese2']
         for condition in CONDITION_LIST:
-            with open('%s.fasta'%condition, 'r') as inFile, \
+            with open('fasta/%s.fasta'%condition, 'r') as inFile, \
                 open('%sprotein.fasta'%condition, 'w') as outFile:
                 # translates and auto-closes both input and output file
                 outFile.write(translate(D, inFile))

@@ -1,0 +1,33 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9   7.3  4.4e-298  980.8   7.3   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      ./hmm/Lhx2_9.fasta.align.hmm
+# Target file:     ./control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./output/control2protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./control2protein.fasta 
+# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 12:31:10 2017
+# [ok]

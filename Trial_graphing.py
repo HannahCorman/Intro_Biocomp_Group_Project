@@ -10,21 +10,21 @@ from scipy.optimize import minimize
 from scipy.stats import chi2
 from plotnine import *
 
+CONDITIONS = ['control1', 'control2', 'obese1', 'obese2']
 SEQ_NAMES = ['Atp12a_8','Gsta2_1','Lhx2_9','Ptpn5_6','Slc7a12_2','Synpr_10']
 
 def condense_output(cond):
     """ Condenses output of all Hmmsearches for each condition to a single file.
     """
     filenames = ['{0}protein.fasta.{1}.out'.format(cond, seq) for seq in SEQ_NAMES]
-    with open('{}hmmoutput'.format(cond), 'w') as outFile:
+    with open('%shmmoutput'%cond, 'w') as outFile:
         for f in filenames:
                 with open(f, 'r') as inFile:
                     outFile.write(inFile.read())
 
 #create single file with all output information
 #Control 1 files condensed to 1 file
-for cond in ['control1', 'control2', 'obese1', 'obese2']:
-    condense_output(cond)
+[condense_output(cond) for cond in CONDITIONS]
 
                 
 #Single file to use for graphing
@@ -35,6 +35,7 @@ FinalHmmOutput = open("FinalHmmOutput", "r")
 
 #create an empty dataframe to put results in
 ExpressionCounts = pandas.DataFrame(columns=['Group','Transcript','Number'])
+ExpressionData = [line.strip() for line in FinalHmmOutput.read().split('\n')]
 
 #Counter for Control1 transcripts
 Control1Atp = Control1Gsta = Control1Lhx = Control1Ptpn = Control1S1c = Control1Synpr = 0
@@ -48,8 +49,6 @@ Obese2Atp = Obese2Gsta = Obese2Lhx = Obese2Ptpn = Obese2S1c = Obese2Synpr = 0
 #for loop to find the number of hits
 for line in ExpressionData:
     line = line.strip()
-    ExpressionData = FinalHmmOutput.read().strip('\n')
-    ExpressionData = [line.strip() for line in FinalHmmOutput.read().split('\n')]
     if "Control1" in line:
         if "Atp12a_8.fasta" in line:
             Control1Atp += 1
