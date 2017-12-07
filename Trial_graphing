@@ -12,7 +12,7 @@ from plotnine import *
 
 #create single file with all output information
 #Control 1 files condensed to 1 file
-Control1filenames = ['control1protein.fasta.Atp12a_8.out','control1protein.fasta.Gsta2_1.out','control1protein.fasta.Lhx2_9.out','control1protein.fasta.Ptpn5_6.out','control1protein.fasta.Slc7a12_2.out','control1protein.fasta.Slc7a12_2.out']
+Control1filenames = ['control1protein.fasta.Atp12a_8.out','control1protein.fasta.Gsta2_1.out','control1protein.fasta.Lhx2_9.out','control1protein.fasta.Ptpn5_6.out','control1protein.fasta.Slc7a12_2.out','control1protein.fasta.Synpr_10.out']
 with open('Control1hmmoutput', 'w') as outfile:
     for fname in Control1filenames:
         with open(fname) as infile:
@@ -42,6 +42,7 @@ with open('Obese2hmmoutput', 'w') as outfile:
         with open(fname) as infile:
             for line in infile:
                 outfile.write(line)
+                
 #Single file to use for graphing
 ExpressionFiles = ['Control1hmmoutput','Control2hmmoutput','Obese1hmmoutput','Obese2hmmoutput']
 with open('FinalHmmOutput', 'w') as outfile:
@@ -49,15 +50,37 @@ with open('FinalHmmOutput', 'w') as outfile:
         with open(fname) as infile:
             for line in infile:
                 outfile.write(line)
-                
-#For graphing, our data is in FinalHmmOutput
 
-#generate a summary plot
+#Find number of hits in each treatment for each transcript
+#load data
+ExpressionData = pandas.read_csv("FinalHmmOutput",header=0,sep='\t')
+#create an empty dataframe to put results in
+ExpressionCounts = pandas.DataFrame(columns=['Group','Transcript','Number'])                
+#Counter for each transcript
+Control1AtpLength = 0
+Control1GstaLength = 0
+Control1LhxLength = 0
+Control1PtpnLength = 0
+Control1S1cLength = 0
+Control1SynprLength = 0
+
+
+#for loop to find the number of hits
+for line in ExpressionData:
+    line = line.strip()
+    if line[0] == "Control1":
+        if line[2] == "Atp12a_8.fasta":
+            Control1AtpLength = Control1AtpLength+1
+        elif line[2] == "Gsta2_1.fasta":
+            Control1GstaLength = Control1GstaLength+1
+        elif line[2] == "Lhx2_9.fasta":
+            Control1LhxLength = Control1LhxLength+1
+        elif line[2] == "Ptpn5_6.fasta":
+            Control1PtpnLength = Control1PtpnLength+1
+        elif line[2] == "Slc7a12_2.fasta":
+            Control1S1cLength = Control1S1cLength+1
+        else:
+            Control1SynprLength = Control1SynprLength+1
+            
+#generate a summary plot - want to have 4 bars for each transcript
 ggplot(expression,aes(x='',y=''))+geom_bar(stat="summary",fun_y=numpy.mean)+theme_classic()
-
-#want to have 4 bars for each transcript (control1, control2, obese1, obese2)
-#Atp12a_8
-#Control 1
-#Control 2
-#Obese 1
-#Obese 2
