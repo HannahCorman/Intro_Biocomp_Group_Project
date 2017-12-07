@@ -32,11 +32,9 @@ for cond in ['control1', 'control2', 'obese1', 'obese2']:
 #Find number of hits in each treatment for each transcript
 #load data
 FinalHmmOutput = open("FinalHmmOutput", "r")
-ExpressionData = FinalHmmOutput.read().strip('\n')
-ExpressionData = [line.strip() for line in ExpressionData]
 
 #create an empty dataframe to put results in
-ExpressionCounts = pandas.DataFrame(columns=['Group','Transcript','Number'])                
+ExpressionCounts = pandas.DataFrame(columns=['Group','Transcript','Number'])
 
 #Counter for Control1 transcripts
 Control1Atp = Control1Gsta = Control1Lhx = Control1Ptpn = Control1S1c = Control1Synpr = 0
@@ -51,59 +49,59 @@ Obese2Atp = Obese2Gsta = Obese2Lhx = Obese2Ptpn = Obese2S1c = Obese2Synpr = 0
 for line in ExpressionData:
     line = line.strip()
     ExpressionData = FinalHmmOutput.read().strip('\n')
-    ExpressionData = [line.strip() for line in ExpressionData]
+    ExpressionData = [line.strip() for line in FinalHmmOutput.read().split('\n')]
     if "Control1" in line:
         if "Atp12a_8.fasta" in line:
-            Control1Atp = Control1Atp+1
+            Control1Atp += 1
         elif "Gsta2_1.fasta" in line:
-            Control1Gsta = Control1Gsta+1
+            Control1Gsta += 1
         elif "Lhx2_9.fasta" in line:
-            Control1Lhx = Control1Lhx+1
+            Control1Lhx += 1
         elif "Ptpn5_6.fasta" in line:
-            Control1Ptpn = Control1Ptpn+1
+            Control1Ptpn += 1
         elif "Slc7a12_2.fasta" in line:
-            Control1S1c = Control1S1c+1
+            Control1S1c += 1
         else:
-            Control1Synpr = Control1Synpr+1
+            Control1Synpr += 1
     elif "Control2" in line:
         if "Atp12a_8.fasta" in line:
-            Control2Atp = Control2Atp+1
+            Control2Atp += 1
         elif "Gsta2_1.fasta" in line:
-            Control2Gsta = Control2Gsta+1
+            Control2Gsta += 1
         elif "Lhx2_9.fasta" in line:
-            Control2Lhx = Control2Lhx+1
+            Control2Lhx += 1
         elif "Ptpn5_6.fasta" in line:
-            Control2Ptpn = Control2Ptpn+1
+            Control2Ptpn += 1
         elif "Slc7a12_2.fasta" in line:
-            Control2S1c = Control2S1c+1
+            Control2S1c += 1
         else:
-            Control2Synpr = Control2Synpr+1
+            Control2Synpr += 1
     elif "Obese1" in line:
         if "Atp12a_8.fasta" in line:
-            Obese1Atp = Obese1Atp+1
+            Obese1Atp += 1
         elif "Gsta2_1.fasta" in line:
-            Obese1Gsta = Obese1Gsta+1
+            Obese1Gsta += 1
         elif "Lhx2_9.fasta" in line:
-            Obese1Lhx = Obese1Lhx+1
+            Obese1Lhx += 1
         elif "Ptpn5_6.fasta" in line:
-            Obese1Ptpn = Obese1Ptpn+1
+            Obese1Ptpn += 1
         elif "Slc7a12_2.fasta" in line:
-            Obese1S1c = Obese1S1c+1
+            Obese1S1c += 1
         else:
-            Obese1Synpr = Obese1Synpr+1
+            Obese1Synpr += 1
     else:
         if "Atp12a_8.fasta" in line:
-            Obese2Atp = Obese2Atp+1
+            Obese2Atp += 1
         elif "Gsta2_1.fasta" in line:
-            Obese2Gsta = Obese2Gsta+1
+            Obese2Gsta += 1
         elif "Lhx2_9.fasta" in line:
-            Obese2Lhx = Obese2Lhx+1
+            Obese2Lhx += 1
         elif "Ptpn5_6.fasta" in line:
-            Obese2Ptpn = Obese2Ptpn+1
+            Obese2Ptpn += 1
         elif "Slc7a12_2.fasta" in line:
-            Obese2S1c = Obese2S1c+1
+            Obese2S1c += 1
         else:
-            Obese2Synpr = Obese2Synpr+1
+            Obese2Synpr += 1
             
             
 #generate a summary plot - want to have 4 bars for each transcript
