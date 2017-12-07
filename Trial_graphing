@@ -56,31 +56,91 @@ with open('FinalHmmOutput', 'w') as outfile:
 ExpressionData = pandas.read_csv("FinalHmmOutput",header=0,sep='\t')
 #create an empty dataframe to put results in
 ExpressionCounts = pandas.DataFrame(columns=['Group','Transcript','Number'])                
-#Counter for each transcript
-Control1AtpLength = 0
-Control1GstaLength = 0
-Control1LhxLength = 0
-Control1PtpnLength = 0
-Control1S1cLength = 0
-Control1SynprLength = 0
-
+#Counter for Control1 transcripts
+Control1Atp = 0
+Control1Gsta = 0
+Control1Lhx = 0
+Control1Ptpn = 0
+Control1S1c = 0
+Control1Synpr = 0
+#Counter for Control2 transcripts
+Control2Atp = 0
+Control2Gsta = 0
+Control2Lhx = 0
+Control2Ptpn = 0
+Control2S1c = 0
+Control2Synpr = 0
+#Counter for Obese1 transcripts
+Obese1Atp = 0
+Obese1Gsta = 0
+Obese1Lhx = 0
+Obeses1Ptpn = 0
+Obese1S1c = 0
+Obese1Synpr = 0
+#Counter for Obese2 transcripts
+Obese2Atp = 0
+Obese2Gsta = 0
+Obese2Lhx = 0
+Obese2Ptpn = 0
+Obese2S1c = 0
+Obese2Synpr = 0
 
 #for loop to find the number of hits
 for line in ExpressionData:
     line = line.strip()
     if line[0] == "Control1":
         if line[2] == "Atp12a_8.fasta":
-            Control1AtpLength = Control1AtpLength+1
+            Control1Atp = Control1Atp+1
         elif line[2] == "Gsta2_1.fasta":
-            Control1GstaLength = Control1GstaLength+1
+            Control1Gsta = Control1Gsta+1
         elif line[2] == "Lhx2_9.fasta":
-            Control1LhxLength = Control1LhxLength+1
+            Control1Lhx = Control1Lhx+1
         elif line[2] == "Ptpn5_6.fasta":
-            Control1PtpnLength = Control1PtpnLength+1
+            Control1Ptpn = Control1Ptpn+1
         elif line[2] == "Slc7a12_2.fasta":
-            Control1S1cLength = Control1S1cLength+1
+            Control1S1c = Control1S1c+1
         else:
-            Control1SynprLength = Control1SynprLength+1
+            Control1Synpr = Control1Synpr+1
+    elif line[0] == "Control2":
+        if line[2] == "Atp12a_8.fasta":
+            Control2Atp = Control2Atp+1
+        elif line[2] == "Gsta2_1.fasta":
+            Control2Gsta = Control2Gsta+1
+        elif line[2] == "Lhx2_9.fasta":
+            Control2Lhx = Control2Lhx+1
+        elif line[2] == "Ptpn5_6.fasta":
+            Control2Ptpn = Control2Ptpn+1
+        elif line[2] == "Slc7a12_2.fasta":
+            Control2S1c = Control2S1c+1
+        else:
+            Control2Synpr = Control2Synpr+1
+    elif line[0] == "Obese1":
+        if line[2] == "Atp12a_8.fasta":
+            Obese1Atp = Obese1Atp+1
+        elif line[2] == "Gsta2_1.fasta":
+            Obese1Gsta = Obese1Gsta+1
+        elif line[2] == "Lhx2_9.fasta":
+            Obese1Lhx = Obese1Lhx+1
+        elif line[2] == "Ptpn5_6.fasta":
+            Obese1Ptpn = Obese1Ptpn+1
+        elif line[2] == "Slc7a12_2.fasta":
+            Obese1S1c = Obese1S1c+1
+        else:
+            Obese1Synpr = Obese1Synpr+1
+    else:
+        if line[2] == "Atp12a_8.fasta":
+            Obese2Atp = Obese2Atp+1
+        elif line[2] == "Gsta2_1.fasta":
+            Obese2Gsta = Obese2Gsta+1
+        elif line[2] == "Lhx2_9.fasta":
+            Obese2Lhx = Obese2Lhx+1
+        elif line[2] == "Ptpn5_6.fasta":
+            Obese2Ptpn = Obese2Ptpn+1
+        elif line[2] == "Slc7a12_2.fasta":
+            Obese2S1c = Obese2S1c+1
+        else:
+            Obese2Synpr = Obese2Synpr+1
+            
             
 #generate a summary plot - want to have 4 bars for each transcript
 ggplot(expression,aes(x='',y=''))+geom_bar(stat="summary",fun_y=numpy.mean)+theme_classic()
