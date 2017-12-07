@@ -28,6 +28,6 @@ Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9
 # Query file:      ./hmm/Lhx2_9.fasta.align.hmm
 # Target file:     ./Control2protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control2protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./Control2protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:48 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:08:00 2017
 # [ok]

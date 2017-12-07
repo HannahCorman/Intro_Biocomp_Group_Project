@@ -108,6 +108,6 @@ Obese1               -          Synpr_10.fasta       -             2e-203  668.5
 # Query file:      ./hmm/Synpr_10.fasta.align.hmm
 # Target file:     ./Obese1protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese1protein.fasta.Synpr_10.out ./hmm/Synpr_10.fasta.align.hmm ./Obese1protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:54 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:08:06 2017
 # [ok]

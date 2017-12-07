@@ -20,6 +20,6 @@ Control1             -          Ptpn5_6.fasta        -                  0 1318.0
 # Query file:      ./hmm/Ptpn5_6.fasta.align.hmm
 # Target file:     ./Control1protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control1protein.fasta.Ptpn5_6.out ./hmm/Ptpn5_6.fasta.align.hmm ./Control1protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:46 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:07:57 2017
 # [ok]

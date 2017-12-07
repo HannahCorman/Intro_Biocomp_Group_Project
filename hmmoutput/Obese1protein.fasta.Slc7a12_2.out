@@ -24,6 +24,6 @@ Obese1               -          Slc7a12_2.fasta      -             2e-101  335.1
 # Query file:      ./hmm/Slc7a12_2.fasta.align.hmm
 # Target file:     ./Obese1protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese1protein.fasta.Slc7a12_2.out ./hmm/Slc7a12_2.fasta.align.hmm ./Obese1protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:54 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:08:06 2017
 # [ok]

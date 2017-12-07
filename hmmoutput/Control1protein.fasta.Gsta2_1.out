@@ -20,6 +20,6 @@ Control1             -          Gsta2_1.fasta        -           1.3e-155  508.9
 # Query file:      ./hmm/Gsta2_1.fasta.align.hmm
 # Target file:     ./Control1protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Control1protein.fasta.Gsta2_1.out ./hmm/Gsta2_1.fasta.align.hmm ./Control1protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:46 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:07:56 2017
 # [ok]

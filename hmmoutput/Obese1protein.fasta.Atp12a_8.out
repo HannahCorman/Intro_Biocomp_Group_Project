@@ -46,6 +46,6 @@ Obese1               -          Atp12a_8.fasta       -                  0 2451.7
 # Query file:      ./hmm/Atp12a_8.fasta.align.hmm
 # Target file:     ./Obese1protein.fasta
 # Option settings: ./hmm/hmmsearch --tblout ./hmmoutput/Obese1protein.fasta.Atp12a_8.out ./hmm/Atp12a_8.fasta.align.hmm ./Obese1protein.fasta 
-# Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Thu Dec  7 12:58:52 2017
+# Current dir:     /cygdrive/c/Users/kcaroth1/Desktop/Bioinformatics/Group Project/Intro_Biocomp_Group_Project
+# Date:            Thu Dec  7 15:08:04 2017
 # [ok]
