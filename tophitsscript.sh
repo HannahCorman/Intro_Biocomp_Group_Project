@@ -2,6 +2,4 @@
 ## the directory and compile them into a new .txt file called
 ## "tophits.txt"
 
-for file in Alignments; do
-	head -n 1 *.csv > tophits.txt
-done
+head -n 1 ./BLAST/*.csv > ./BLAST/tophits.txt
