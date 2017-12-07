@@ -10,46 +10,24 @@ from scipy.optimize import minimize
 from scipy.stats import chi2
 from plotnine import *
 
+SEQ_NAMES = ['Atp12a_8','Gsta2_1','Lhx2_9','Ptpn5_6','Slc7a12_2','Synpr_10']
+
+def condense_output(cond):
+    """ Condenses output of all Hmmsearches for each condition to a single file.
+    """
+    filenames = ['{0}protein.fasta.{1}.out'.format(cond, seq) for seq in SEQ_NAMES]
+    with open('{}hmmoutput'.format(cond), 'w') as outFile:
+        for f in filenames:
+                with open(f, 'r') as inFile:
+                    outFile.write(inFile.read())
+
 #create single file with all output information
 #Control 1 files condensed to 1 file
-Control1filenames = ['control1protein.fasta.Atp12a_8.out','control1protein.fasta.Gsta2_1.out','control1protein.fasta.Lhx2_9.out','control1protein.fasta.Ptpn5_6.out','control1protein.fasta.Slc7a12_2.out','control1protein.fasta.Synpr_10.out']
-with open('Control1hmmoutput', 'w') as outfile:
-    for fname in Control1filenames:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)
+for cond in ['control1', 'control2', 'obese1', 'obese2']:
+    condense_output(cond)
 
-#Control 2 files condensed to 1 file  
-Control2filenames = ['control2protein.fasta.Atp12a_8.out','control2protein.fasta.Synpr_10.out','control2protein.fasta.Slc7a12_2.out','control2protein.fasta.Ptpn5_6.out','control2protein.fasta.Lhx2_9.out','control2protein.fasta.Gsta2_1.out']
-with open('Control2hmmoutput', 'w') as outfile:
-    for fname in Control2filenames:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)
-                
-#Obese 1 files condensed to 1 file 
-Obese1filenames = ['obese1protein.fasta.Slc7a12_2.out','obese1protein.fasta.Atp12a_8.out','obese1protein.fasta.Ptpn5_6.out','obese1protein.fasta.Gsta2_1.out','obese1protein.fasta.Lhx2_9.out','obese1protein.fasta.Synpr_10.out']
-with open('Obese1hmmoutput', 'w') as outfile:
-    for fname in Obese1filenames:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)
-                
-#Obese 2 files condensed to 1 file
-Obese2filenames = ['obese2protein.fasta.Atp12a_8.out','obese2protein.fasta.Synpr_10.out','obese2protein.fasta.Slc7a12_2.out','obese2protein.fasta.Ptpn5_6.out','obese2protein.fasta.Lhx2_9.out','obese2protein.fasta.Gsta2_1.out']
-with open('Obese2hmmoutput', 'w') as outfile:
-    for fname in Obese2filenames:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)
                 
 #Single file to use for graphing
-ExpressionFiles = ['Control1hmmoutput','Control2hmmoutput','Obese1hmmoutput','Obese2hmmoutput']
-with open('FinalHmmOutput', 'w') as outfile:
-    for fname in ExpressionFiles:
-        with open(fname) as infile:
-            for line in infile:
-                outfile.write(line)
 
 #Find number of hits in each treatment for each transcript
 #load data
