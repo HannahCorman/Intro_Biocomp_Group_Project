@@ -25,9 +25,9 @@ Control2             -          Lhx2_9.fasta         -           3.9e-298  980.9
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Lhx2_9.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Lhx2_9.out Lhx2_9.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Lhx2_9.fasta.align.hmm
+# Target file:     ./control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./output/control2protein.fasta.Lhx2_9.out ./hmm/Lhx2_9.fasta.align.hmm ./control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:07 2017
+# Date:            Thu Dec  7 12:31:10 2017
 # [ok]

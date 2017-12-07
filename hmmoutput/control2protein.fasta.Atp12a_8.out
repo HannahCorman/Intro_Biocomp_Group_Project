@@ -25,9 +25,9 @@ Control2             -          Atp12a_8.fasta       -                  0 2451.7
 # Program:         hmmsearch
 # Version:         3.1b2 (February 2015)
 # Pipeline mode:   SEARCH
-# Query file:      Atp12a_8.fasta.align.hmm
-# Target file:     control2protein.fasta
-# Option settings: ./hmmsearch --tblout control2protein.fasta.Atp12a_8.out Atp12a_8.fasta.align.hmm control2protein.fasta 
+# Query file:      ./hmm/Atp12a_8.fasta.align.hmm
+# Target file:     ./control2protein.fasta
+# Option settings: ./hmm/hmmsearch --tblout ./output/control2protein.fasta.Atp12a_8.out ./hmm/Atp12a_8.fasta.align.hmm ./control2protein.fasta 
 # Current dir:     /mnt/c/Users/Grant/Desktop/dumb-class/git-projects/Intro_Biocomp_Group_Project
-# Date:            Mon Dec  4 14:43:06 2017
+# Date:            Thu Dec  7 12:31:10 2017
 # [ok]
